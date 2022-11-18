@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Welcome! To CORAL</title>
+</head>
+<body >
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light background-100 border-bottom-0 " id="home">
+        <div class="container border-bottom py-2">
+            <!-- NAV Brand for sm-screen -->
+            <a class="navbar-brand d-lg-none" href="#">CORAL</a>
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Nav Collapsable Links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse my-lg-3" id="navbarSupportedContent"> 
+                    <div class="navbar-nav d-lg-flex justify-content-lg-between  w-100">
+                        <a href="" type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#search-modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <!-- Search Modal -->
+                        <div class="modal fade" id="search-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="input-group my-3">
+                                        <input type="text" class="form-control" placeholder="Search item . . ." aria-label="Search" aria-describedby="button-addon2">
+                                        <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <!-- Brand for lg-screen -->
+                        <a href="#" class="navbar-brand d-none d-lg-block">CORAL</a>
+                        <div class="d-lg-flex">
+                            <a href="" class="nav-link pr-lg-2"><i class="fa-regular fa-user"></i> Account</a>
+                            <a href="" class="nav-link pl-lg-2"><i class="fa-sharp fa-solid fa-bag-shopping"></i> Shopping</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Nav Links -->
+    <nav class="nav background-100">
+        <div class="container d-flex justify-content-between flex-wrap">            
+            <a class="nav-link text-dark mx-auto" href="#"><p>Jewellery & Accessories</p></a>
+            <a class="nav-link text-dark mx-auto" href="#"><p>Clothing & Shoes</p></a>
+            <a class="nav-link text-dark mx-auto" href="#"><p>Home & Living</p></a>
+            <a class="nav-link text-dark mx-auto" href="#"><p>Wedding & Party</p></a>
+            <a class="nav-link text-dark mx-auto" href="#"><p>Toys & Entertainment</p></a>
+            <a class="nav-link text-dark mx-auto" href="#"><p>Art & Collectibles</p></a>
+            <a class="nav-link text-dark mx-auto" href="#"><p>Craft Supplies & Tools</p></a>
+        </div>
+    </nav>
+    <!-- Nav Links End -->
+    <!-- Hero Section Start -->
+    <div class="background-100 py-5">
+        <div class="container my-3">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12  order-lg-0 order-md-0 order-1">
+                    <h2 class="display-3 text-lg-start text-md-start text-center mt-5">Collections</h2>
+                    <p class="lead text-black mt-4 lh-lg">
+                        You Can Explore Ans Shop Many Different Collection 
+                        From Various Brands Here.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12"><img src="./imgs/hero-img.png" class="img-fluid" alt=""></div>
+            </div>
+        </div>
+        <div class="d-none d-lg-block position-absolute top-50 end-0 hero-flower">
+            <img src="./imgs/hero-design-flower.png" alt="">
+        </div>
+    </div>
+    <!-- Hero Section End -->
+
+    <!-- Brands -->
+    <div class="container d-flex flex-wrap justify-content-between py-2 my-5">
+        <img class="my-3 py-2 mx-auto img-fluid" src="./imgs/brand-1.png" alt="">
+        <img class="my-3 py-2 mx-auto img-fluid" src="./imgs/brand-2.png" alt="">
+        <img class="my-3 py-2 mx-auto img-fluid" src="./imgs/brand-3.png" alt="">
+        <img class="my-3 py-2 mx-auto img-fluid" src="./imgs/brand-4.png" alt="">
+        <img class="my-3 py-2 mx-auto img-fluid" src="./imgs/brand-5.png" alt="">
+    </div>
+    <!-- Brands End -->
+
+    <!-- Fashion Start -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-6 d-flex">
+                <p class="lead rotated-text text-black px-3 d-none d-lg-block">
+                    Explore new and popular styles
+                </p>
+                <img class="img-fluid mx-auto" src="./imgs/image-category-1.png" alt="">
+            </div>
+            <div class="col-lg-6">
+                <div class="row mx-auto">
+                    <a class="col-lg-6 col-md-6 col-sm-12 pt-4 "><img class="img-fluid" src="./imgs/image-category-2.png" alt=""></a>
+                    <a class="col-lg-6 col-md-6 col-sm-12 pt-4 "><img class="img-fluid" src="./imgs/image-category-3.png" alt=""></a>
+                </div>
+                <div class="row mx-auto">
+                    <a class="col-lg-6 col-md-6 col-sm-12 pt-4 "><img class="img-fluid" src="./imgs/image-category-4.png" alt=""></a>
+                    <a class="col-lg-6 col-md-6 col-sm-12 pt-4 "><img class="img-fluid" src="./imgs/image-category-5.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fashion END -->
+
+    <!-- New Products Start -->
+    <div class="container my-4">
+        <div class="row">
+            <h2 class="display-5 text-center py-4"><b>New Products</b></h2>
+        </div>
+        <nav class="nav row">
+            <div class="col-lg-8 col-md-8 col-sm-12 d-flex flex-wrap my-2">
+                <a class="nav-link text-black" href="#">All Products</a>
+                <a class="nav-link text-black" href="#">T-Shirt</a>
+                <a class="nav-link text-black" href="#">Hoodies</a>
+                <a class="nav-link text-black" href="#">jacket</a>
+            </div>
+            <!-- Filter Button -->
+            <div class="col-lg-4 col-md-4 col-sm-12 text-center my-2">
+                <div class="dropdown float-none float-lg-end">
+                    <button href="" class="btn btn-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                        <i class="fa-solid fa-filter pe-2"></i>
+                        Filter
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Filter-1</a></li>
+                        <li><a class="dropdown-item" href="#">Filter-2</a></li>
+                        <li><a class="dropdown-item" href="#">Filter-3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row my-5">
+            <!-- Product Single Card -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card border-0">
+                    <a href="" class="text-decoration-none product-img">
+                        <img src="./imgs/p1.png" class="card-img-top " alt="...">
+                    </a>
+                    <div class="product-actions bg-dark d-flex justify-content-between text-light px-3 pt-3">
+                        <div>
+                            <a href="" class="text-decoration-none text-light">
+                                <i class="fa-regular fa-heart pe-3"></i>
+                            </a>
+                            <a href="" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="d-flex text-decoration-none text-light">                         
+                                <i class="fa-sharp fa-solid fa-cart-plus pe-3 pt-1"></i>
+                                <p>Shop Now</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="card-body">
+                      <h6 class="card-title">Adicolor Classics Joggers</h6>
+                      <div class="d-flex justify-content-between px-2 py-3">
+                        <p>Dress</p>
+                        <p><strong>&#8377; 599</strong></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <!-- Product Single Card End -->
+
+            <!-- Product Single Card -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card border-0">
+                    <a href="" class="text-decoration-none product-img">
+                        <img src="./imgs/p2.png" class="card-img-top " alt="...">
+                    </a>
+                    <div class="product-actions bg-dark d-flex justify-content-between text-light px-3 pt-3">
+                        <div>
+                            <a href="" class="text-decoration-none text-light">
+                                <i class="fa-regular fa-heart pe-3"></i>
+                            </a>
+                            <a href="" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="d-flex text-decoration-none text-light">                         
+                                <i class="fa-sharp fa-solid fa-cart-plus pe-3 pt-1"></i>
+                                <p>Shop Now</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="card-body">
+                      <h6 class="card-title">Adicolor Classics Joggers</h6>
+                      <div class="d-flex justify-content-between px-2 py-3">
+                        <p>Dress</p>
+                        <p><strong>&#8377; 599</strong></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <!-- Product Single Card -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card border-0">
+                    <a href="" class="text-decoration-none product-img">
+                        <img src="./imgs/p3.png" class="card-img-top " alt="...">
+                    </a>
+                    <div class="product-actions bg-dark d-flex justify-content-between text-light px-3 pt-3">
+                        <div>
+                            <a href="" class="text-decoration-none text-light">
+                                <i class="fa-regular fa-heart pe-3"></i>
+                            </a>
+                            <a href="" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="d-flex text-decoration-none text-light">                         
+                                <i class="fa-sharp fa-solid fa-cart-plus pe-3 pt-1"></i>
+                                <p>Shop Now</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="card-body">
+                      <h6 class="card-title">Adicolor Classics Joggers</h6>
+                      <div class="d-flex justify-content-between px-2 py-3">
+                        <p>Dress</p>
+                        <p><strong>&#8377; 599</strong></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <!-- Product Single Card -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card border-0">
+                    <a href="" class="text-decoration-none product-img">
+                        <img src="./imgs/p4.png" class="card-img-top " alt="...">
+                    </a>
+                    <div class="product-actions bg-dark d-flex justify-content-between text-light px-3 pt-3">
+                        <div>
+                            <a href="" class="text-decoration-none text-light">
+                                <i class="fa-regular fa-heart pe-3"></i>
+                            </a>
+                            <a href="" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="d-flex text-decoration-none text-light">                         
+                                <i class="fa-sharp fa-solid fa-cart-plus pe-3 pt-1"></i>
+                                <p>Shop Now</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="card-body">
+                      <h6 class="card-title">Adicolor Classics Joggers</h6>
+                      <div class="d-flex justify-content-between px-2 py-3">
+                        <p>Dress</p>
+                        <p><strong>&#8377; 599</strong></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <!-- Product Single Card -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card border-0">
+                    <a href="" class="text-decoration-none product-img">
+                        <img src="./imgs/p5.png" class="card-img-top " alt="...">
+                    </a>
+                    <div class="product-actions bg-dark d-flex justify-content-between text-light px-3 pt-3">
+                        <div>
+                            <a href="" class="text-decoration-none text-light">
+                                <i class="fa-regular fa-heart pe-3"></i>
+                            </a>
+                            <a href="" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="d-flex text-decoration-none text-light">                         
+                                <i class="fa-sharp fa-solid fa-cart-plus pe-3 pt-1"></i>
+                                <p>Shop Now</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="card-body">
+                      <h6 class="card-title">Adicolor Classics Joggers</h6>
+                      <div class="d-flex justify-content-between px-2 py-3">
+                        <p>Dress</p>
+                        <p><strong>&#8377; 599</strong></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <!-- Product Single Card -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card border-0">
+                    <a href="" class="text-decoration-none product-img">
+                        <img src="./imgs/p6.png" class="card-img-top " alt="...">
+                    </a>
+                    <div class="product-actions bg-dark d-flex justify-content-between text-light px-3 pt-3">
+                        <div>
+                            <a href="" class="text-decoration-none text-light">
+                                <i class="fa-regular fa-heart pe-3"></i>
+                            </a>
+                            <a href="" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="d-flex text-decoration-none text-light">                         
+                                <i class="fa-sharp fa-solid fa-cart-plus pe-3 pt-1"></i>
+                                <p>Shop Now</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="card-body">
+                      <h6 class="card-title">Adicolor Classics Joggers</h6>
+                      <div class="d-flex justify-content-between px-2 py-3">
+                        <p>Dress</p>
+                        <p><strong>&#8377; 599</strong></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <!-- Product Single Card -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card border-0">
+                    <a href="" class="text-decoration-none product-img">
+                        <img src="./imgs/p7.png" class="card-img-top " alt="...">
+                    </a>
+                    <div class="product-actions bg-dark d-flex justify-content-between text-light px-3 pt-3">
+                        <div>
+                            <a href="" class="text-decoration-none text-light">
+                                <i class="fa-regular fa-heart pe-3"></i>
+                            </a>
+                            <a href="" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="d-flex text-decoration-none text-light">                         
+                                <i class="fa-sharp fa-solid fa-cart-plus pe-3 pt-1"></i>
+                                <p>Shop Now</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="card-body">
+                      <h6 class="card-title">Adicolor Classics Joggers</h6>
+                      <div class="d-flex justify-content-between px-2 py-3">
+                        <p>Dress</p>
+                        <p><strong>&#8377; 599</strong></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <!-- Product Single Card -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card border-0">
+                    <a href="" class="text-decoration-none product-img">
+                        <img src="./imgs/p8.png" class="card-img-top " alt="...">
+                    </a>
+                    <div class="product-actions bg-dark d-flex justify-content-between text-light px-3 pt-3">
+                        <div>
+                            <a href="" class="text-decoration-none text-light">
+                                <i class="fa-regular fa-heart pe-3"></i>
+                            </a>
+                            <a href="" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="d-flex text-decoration-none text-light">                         
+                                <i class="fa-sharp fa-solid fa-cart-plus pe-3 pt-1"></i>
+                                <p>Shop Now</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="card-body">
+                      <h6 class="card-title">Adicolor Classics Joggers</h6>
+                      <div class="d-flex justify-content-between px-2 py-3">
+                        <p>Dress</p>
+                        <p><strong>&#8377; 599</strong></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+                
+    </div>
+    <!-- New Products End -->
+
+    <!-- Banner lg-->
+    <div class="banner d-none d-lg-block ">
+            <img class="img-fluid" src="./imgs/andrey-zvyagintsev-EQj1ZMpq_VM-unsplash 1.png" alt="">
+        <div class="banner-overlay">
+            <div class="col-lg-6 banner-text">
+                <img src="./imgs/1024px-Zara_Logo 2.png" alt="" class="mb-4">
+                <p class="text-light pt-5">Lustrous yet understated. The new evening
+                    wear collection exclusively offered at the
+                    reopened Giorgio Armani boutique in Los
+                    Angeles.
+                </p>
+                <a href="" class="btn btn-light px-4 my-4">
+                    See Collection
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Banner lg End  -->
+
+    <!-- Banner MD & SM -->
+    <div class="banner-md d-lg-none bg-dark">
+        <div class="col-md-6 mx-auto py-5">
+            <img class="d-block mx-auto" src="./imgs/1024px-Zara_Logo 2.png" alt="" class="mb-4">
+            <p class="text-light pt-4 px-2">Lustrous yet understated. The new evening
+                wear collection exclusively offered at the
+                reopened Giorgio Armani boutique in Los
+                Angeles.
+            </p>
+            <div class=" text-center">
+                <a href="" class="btn btn-light px-4 mt-3">
+                    See Collection
+                </a> 
+            </div>
+        </div>
+    </div>
+    <!-- Banner MD & SM End-->
+    <!-- BestSeller Section -->
+    <div class="container my-5">
+        <div class="row">
+            <h2 class="display-5 text-center py-4"><b>Best Sellers</b></h2>
+        </div>
+
+        <nav class="nav row">
+            <div class="col-lg-8 col-md-8 col-sm-12 d-flex flex-wrap my-2">
+                <a class="nav-link text-black" href="#">All Products</a>
+                <a class="nav-link text-black" href="#">T-Shirt</a>
+                <a class="nav-link text-black" href="#">Hoodies</a>
+                <a class="nav-link text-black" href="#">jacket</a>
+            </div>
+            <!-- Show All Button -->
+            <div class="col-lg-4 col-md-4 col-sm-6 text-center my-2">
+                <div class="float-none float-lg-end">
+                    <button href="" class="btn btn-dark" type="button"> 
+                        Show All
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="row my-5">
+            <!-- Product Single Card -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card border-0">
+                    <a href="" class="text-decoration-none product-img">
+                        <img src="./imgs/p1.png" class="card-img-top " alt="...">
+                    </a>
+                    <div class="product-actions bg-dark d-flex justify-content-between text-light px-3 pt-3">
+                        <div>
+                            <a href="" class="text-decoration-none text-light">
+                                <i class="fa-regular fa-heart pe-3"></i>
+                            </a>
+                            <a href="" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="d-flex text-decoration-none text-light">                         
+                                <i class="fa-sharp fa-solid fa-cart-plus pe-3 pt-1"></i>
+                                <p>Shop Now</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="card-body">
+                      <h6 class="card-title">Adicolor Classics Joggers</h6>
+                      <div class="d-flex justify-content-between px-2 py-3">
+                        <p>Dress</p>
+                        <p><strong>&#8377; 599</strong></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <!-- Product Single Card End -->
+
+            <!-- Product Single Card -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card border-0">
+                    <a href="" class="text-decoration-none product-img">
+                        <img src="./imgs/p2.png" class="card-img-top " alt="...">
+                    </a>
+                    <div class="product-actions bg-dark d-flex justify-content-between text-light px-3 pt-3">
+                        <div>
+                            <a href="" class="text-decoration-none text-light">
+                                <i class="fa-regular fa-heart pe-3"></i>
+                            </a>
+                            <a href="" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="d-flex text-decoration-none text-light">                         
+                                <i class="fa-sharp fa-solid fa-cart-plus pe-3 pt-1"></i>
+                                <p>Shop Now</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="card-body">
+                      <h6 class="card-title">Adicolor Classics Joggers</h6>
+                      <div class="d-flex justify-content-between px-2 py-3">
+                        <p>Dress</p>
+                        <p><strong>&#8377; 599</strong></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <!-- Product Single Card -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card border-0">
+                    <a href="" class="text-decoration-none product-img">
+                        <img src="./imgs/p3.png" class="card-img-top " alt="...">
+                    </a>
+                    <div class="product-actions bg-dark d-flex justify-content-between text-light px-3 pt-3">
+                        <div>
+                            <a href="" class="text-decoration-none text-light">
+                                <i class="fa-regular fa-heart pe-3"></i>
+                            </a>
+                            <a href="" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="d-flex text-decoration-none text-light">                         
+                                <i class="fa-sharp fa-solid fa-cart-plus pe-3 pt-1"></i>
+                                <p>Shop Now</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="card-body">
+                      <h6 class="card-title">Adicolor Classics Joggers</h6>
+                      <div class="d-flex justify-content-between px-2 py-3">
+                        <p>Dress</p>
+                        <p><strong>&#8377; 599</strong></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <!-- Product Single Card -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card border-0">
+                    <a href="" class="text-decoration-none product-img">
+                        <img src="./imgs/p4.png" class="card-img-top " alt="...">
+                    </a>
+                    <div class="product-actions bg-dark d-flex justify-content-between text-light px-3 pt-3">
+                        <div>
+                            <a href="" class="text-decoration-none text-light">
+                                <i class="fa-regular fa-heart pe-3"></i>
+                            </a>
+                            <a href="" class="text-decoration-none text-light">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="d-flex text-decoration-none text-light">                         
+                                <i class="fa-sharp fa-solid fa-cart-plus pe-3 pt-1"></i>
+                                <p>Shop Now</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="card-body">
+                      <h6 class="card-title">Adicolor Classics Joggers</h6>
+                      <div class="d-flex justify-content-between px-2 py-3">
+                        <p>Dress</p>
+                        <p><strong>&#8377; 599</strong></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!-- Best Seller Section End -->
+
+    <!-- Social Media Follow-->
+    <div class="background-100">
+        <div class="container py-5">
+            <h3 class="py-2 text-black text-center">Follow Products and Discounts on Instagram</h3>
+        
+            <div class="d-flex justify-content-between flex-wrap my-5">
+                <div class="insta-follow my-2 mx-auto">
+                    <img class="" src="./imgs/i011 1.png" alt="">
+                    <div class="overlay">
+                        <i class="fa-brands fa-instagram fa-2x"></i>
+                    </div>
+                </div>  
+
+                <div class="insta-follow my-2 mx-auto">
+                    <img src="./imgs/i012 1.png" alt="">
+                    <div class="overlay">
+                        <i class="fa-brands fa-instagram fa-2x"></i>
+                    </div>
+                </div>  
+
+                <div class="insta-follow my-2 mx-auto">
+                    <img src="./imgs/i014 1.png" alt="">
+                    <div class="overlay">
+                        <i class="fa-brands fa-instagram fa-2x"></i>
+                    </div>
+                </div>  
+
+                <div class="insta-follow my-2 mx-auto">
+                    <img src="./imgs/i02 1.png" alt="">
+                    <div class="overlay">
+                        <i class="fa-brands fa-instagram fa-2x"></i>
+                    </div>
+                </div>  
+
+                <div class="insta-follow my-2 mx-auto">
+                    <img src="./imgs/i03 1.png" alt="">
+                    <div class="overlay">
+                        <i class="fa-brands fa-instagram fa-2x"></i>
+                    </div>
+                </div>  
+
+                <div class="insta-follow my-2 mx-auto">
+                    <img src="./imgs/i07 1.png" alt="">
+                    <div class="overlay">
+                        <i class="fa-brands fa-instagram fa-2x"></i>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+    <!-- Social Media Follow End-->
+
+    <!-- Footer -->
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-lg-3 col-md-6 my-3">
+                <a class="navbar-brand text-black" href="#">CORAL</a>
+                <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua
+                </p>
+                <div class="d-flex justify-content-between my-4">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 my-3 ps-5">
+                <h6 class="ps-3">CATALOG</h6>
+
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link text-black" href="">Neckless</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="">Hoddies</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="">Jewellary Box</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="">T Shirt</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="">Jacket</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 my-3 ps-5">
+                <h6 class="ps-3">ABOUT US</h6>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link text-black" href="">Our Producers</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="">Sitemap</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 my-3 ps-5">
+                <h6 class="ps-3">CUSTOMER SERVICES</h6>
+
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link text-black" href="">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="">Track Your Order</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="">Product Care & Repair</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="">Book an Appointment</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="">Shipping & Returns</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark mb-0">
+        <div class="container">
+            <div class="row py-2">
+                <div class="col-lg-4 col-md-4 col-sm-6 text-center my-2">
+                    <a class="text-light text-decoration-none">© 2022 Coral , Inc.</a>
+                </div>
+            
+                <div class="col-lg-4 col-md-4 col-sm-4 my-2">
+                    <img class="d-block mx-auto " src="./imgs/icons_payment 1.png" alt="">
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6 text-center my-2">
+                    <a class="text-white text-decoration-none pt-3" href="#home">Scroll to top <i class="fa-solid fa-arrow-up "></i></a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- Bootstrap js -->
+    <script src="./bootstrap/bootstrap.bundle.js"></script>
+</body>
+</html>
